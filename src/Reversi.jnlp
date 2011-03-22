@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Reversi</title>
+        <vendor>Luu Gia Thuy</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+              href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="Reversi.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Reversi Applet"
+         main-class="com.luugiathuy.games.reversi.ReversiApplet"
+         width="560"
+         height="500">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>
