@@ -35,7 +35,6 @@ import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -135,11 +134,9 @@ public class Board extends javax.swing.JPanel implements MouseListener {
     
     private void init() {
     	// load image for pieces
-		try {
-			mBlackPieceImg = ImageIO.read(new File("img/blackpiece.png"));
-			mWhitePieceImg = ImageIO.read(new File("img/whitepiece.png"));
-			//mBlackPieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/blackpiece.png"));
-			//mWhitePieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/whitepiece.png"));
+		try {			
+			mBlackPieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/blackpiece.png"));
+			mWhitePieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/whitepiece.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
