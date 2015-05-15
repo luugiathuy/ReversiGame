@@ -386,6 +386,8 @@ public class Reversi extends Observable{
 	public static char[][] effectMove(char[][] board, char piece, int row, int col) {
 		board[row][col] = piece;
 		
+		Reversi.getInstance().resetEffectedPieces();
+		
 		// check 8 directions
 		for (int i = 0; i < 8; ++i) {
 			int curRow = row + sOFFSET_MOVE_ROW[i];
@@ -401,7 +403,6 @@ public class Reversi extends Observable{
 				
 				if ((board[curRow][curCol] == piece) && hasOppPieceBetween)
 				{
-					Reversi.getInstance().resetEffectedPieces();
 					int effectPieceRow = row + sOFFSET_MOVE_ROW[i];
 					int effectPieceCol = col + sOFFSET_MOVE_COL[i];
 					while (effectPieceRow != curRow || effectPieceCol != curCol)

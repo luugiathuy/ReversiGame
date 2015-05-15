@@ -135,6 +135,8 @@ public class Board extends javax.swing.JPanel implements MouseListener {
     private void init() {
     	// load image for pieces
 		try {			
+//			mBlackPieceImg = ImageIO.read(new File("img/blackpiece.png"));
+//			mWhitePieceImg = ImageIO.read(new File("img/whitepiece.png"));
 			mBlackPieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/blackpiece.png"));
 			mWhitePieceImg = ImageIO.read(this.getClass().getResourceAsStream("/img/whitepiece.png"));
 		} catch (IOException e) {
