@@ -1,11 +1,11 @@
-Reversi (Othello) games
-=====================
+# Reversi (Othello) games
 
 Java source code for Reversi (a.k.a Othello) games including AI.
 
-##Usage
+## Usage
 
-Use eclipse to open the project.
+IntelliJ IDEA to open the project
 
-##Contact
+## Contact
+
 [@luugiathuy](http://twitter.com/luugiathuy)
